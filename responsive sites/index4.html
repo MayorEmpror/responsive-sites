@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(window).on("load", function () {
+        $(".preloader").fadeOut(1000);
+      })
+      var $column2 = $("#column-two");
+      $("#column-one")
+        .on("mouseover", function () {
+          $(this).animate({
+            width: "450px",
+            height: "350px",
+          });
+
+        })
+        .mouseleave(function () {
+          $(this).animate({
+            width: "416px",
+            height: "308px",
+          });
+        });
+      $("#column-two")
+        .on("mouseover", function () {
+          $(this).animate({
+            width: "450px",
+            height: "350px",
+          });
+        })
+        .mouseleave(function () {
+          $(this).animate({
+            width: "416px",
+            height: "308px",
+          });
+        });
+      $(".home-page-button").on()
+      $(".home-page-button").on('keydown', function (event) {
+        if (event.key == "Escape") {
+          takeUserBack();
+        }
+
+      });
+    });
+
+    function displayHomePage() {
+      $(".home-page").fadeIn(1000)
+      $("body").css({
+        overflow: "hidden"
+      })
+
+    }
+    function takeUserBack() {
+      $(".home-page").fadeOut(1000)
+      $("body").css({
+        overflow: "auto"
+      })
+
+    }
+
+  </script>
+  <title>Hello, world!</title>
+  <style>
+    #section1 {
+      background-image: url(image5.jpg);
+    }
+
+    #section1,
+    #section3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 1500px;
+    }
+
+
+    #section3 {
+      background-image: url(image6.jpg);
+    }
+
+    #section-2 {
+      @media (min width=) height: 600px;
+    }
+
+    .preloader {
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right,
+          red,
+          orange,
+          yellow,
+          green,
+          violet,
+          indigo,
+          blue);
+      position: fixed;
+      z-index: 100;
+    }
+
+    .spanlorem1 {
+      background-image: linear-gradient(90deg, purple, yellow);
+      background-clip: text;
+      color: transparent;
+
+    }
+
+    .home-page {
+      /* display: none; */
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      position: fixed;
+      background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(17, 17, 37));
+
+    }
+  </style>
+</head>
+
+<body>
+  <section class="home-page">
+    <button class="closebutton bg-dark text-center text-secondary" onclick="takeUserBack()">
+      BACK</button>
+    <ul class="d-flex flex-row ">
+      <li class="text-warning d-flex flex-column mx-4">
+        <h1>Store</h1>
+        <a href="">
+          <h3>Account profile</h3>
+        </a>
+        <a href="">
+          <h3>Download Center</h3>
+        </a>
+        <a href="">
+          <h3>Returns</h3>
+        </a>
+        <a href="">
+          <h3>Order tracking</h3>
+        </a>
+      </li>
+      <li class="d-flex flex-column">
+        <h1 class="text-warning ">Education</h1>
+        <a href="#">
+          <h3>ClockWatch in education </h3>
+        </a>
+        <a href="#">
+          <h3> Devices for education</h3>
+        </a>
+        <a href="#">
+          <h3> ClockWatch Teams for Education</h3>
+        </a>
+        <a href="#">
+          <h3> ClockWatch 365 Education</h3>
+        </a>
+
+        <a href="#">
+          <h3>Office Education</h3>
+        </a>
+        <a href="#">
+          <h3>Educator training and development</h3>
+        </a>
+        <a href="#">
+          <h3>Deals for students and parents</h3>
+        </a>
+        <a href="#">
+          <h3>Azure for students</h3>
+        </a>
+      </li>
+      <li class="d-flex flex-column">
+        <h1 class="text-warning">Company</h1>
+
+
+      </li>
+    
+    </ul>
+
+    <!-- <section class="home-footer bg-secondary bg-gradient p-5" style="margin-bottom:0;">the</section> -->
+  </section>
+ 
+  
+  <!-- <section class="preloader">
+  </section> -->
+
+
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="d-flex flex-row">
+        <div class="p-2"><a class="navbar-brand" href="#">Navbar</a></div>
+        <div class="p-2">
+          <a class="btn btn-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">Link with href
+          </a>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-link active" aria-current="page" href="home-page.html">Home</a> -->
+
+          <button class=" home-page-button bg-warning border border-dark text-light justify-content-right mx-1"
+            name="Home" id="homebutton" style="width : 100px" onclick="displayHomePage()">home</button>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="text-light p-5 text-center text-sm-start" id="section1">
+    <div class="container p-5">
+      <div class="container pt-5">
+        <div class="d-lg-flex text-center justify-content-between">
+          <h1 class="ml-3" ->
+            Lorem, ipsum dolor
+            <sapn class="text-dark">Lorem ipsum</sapn> dolor sit.
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark text-light text-center text sm start p-5" id="section-2">
+    <div class="container">
+      <div class="d-sm-flex text-center justify-content-between">
+        <h3 class="text-warning">
+          Lorem ipsum dolor, sit amet consectetur adipisicing.
+        </h3>
+      </div>
+      <h5 class="text-light justify-content-right">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos minus
+        blanditiis recusandae mollitia nisi nemo velit esse tempore architecto
+        consequatur nulla officiis vitae, vel numquam maiores aspernatur
+        voluptate nam corrupti! Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Facilis, vel dignissimos, velit repellendus ea
+        officiis debitis autem odio soluta consequuntur, amet minus maiores
+        ipsum commodi rem cumque iure deleniti maxime. Ea voluptatem illum,
+        ipsam deserunt ipsum doloribus libero quibusdam provident atque,
+        officia inventore placeat molestiae minus ducimus adipisci non vel
+        tenetur voluptatum. Ipsam officia sed mollitia impedit, adipisci
+        deserunt vitae consequuntur fuga at autem illo distinctio id, culpa
+        omnis facere voluptate. Quae consequatur molestias impedit tempore
+        dolorum fugit, quos aspernatur.
+      </h5>
+    </div>
+    <div class="container">
+      <div class="div row text-center">
+        <div class="col-md crd-1 m-1 my-1" id="crd1" style="background-image: linear-gradient(to right, red, blue)">
+          <div class="card bg-danger text-light mt-2">
+            <div class="div card-body text-center">
+              <div class="div h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">lorem ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, quas?
+              </p>
+              <a href="#" class="btn btn-warning">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md crd-2 my-1 m-1" style="background-image: linear-gradient(to right, blue, violet)">
+          <div class="card bg-primary text-light mt-2">
+            <div class="div card-body text-center" card-2-body>
+              <div class="div h1 mb-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="card-title mb-3">lorem ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, quas?
+              </p>
+              <a href="#" class="btn btn-warning">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md crd-3 my-1 m-1" style="background-image: linear-gradient(to right, violet, red)">
+          <div class="card bg-secondary text-light mt-2">
+            <div class="div card-body text-center" id="card-3-body">
+              <div class="div h1 mb-3">
+                <i class="bi bi-person-square"></i>
+              </div>
+              <h3 class="card-title mb-3">lorem idoel</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, quas?
+              </p>
+              <a href="#" class="btn btn-warning">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 class="text-secondary mt-3 justify-content-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non unde
+        consequatur veniam quod rem obcaecati reprehenderit maiores eveniet
+        maxime temporibus illum vero, commodi atque deleniti excepturi id
+        consequuntur enim recusandae debitis ad natus tempore. Reiciendis
+        sequi impedit inventore labore ipsa!
+      </h5>
+    </div>
+  </section>
+
+  <section class="text-light p-5 text-center text-sm-start" id="section3">
+    <div class="container p-5">
+      <div class="container pt-5">
+        <div class="d-lg-flex text-center justify-content-right">
+          <h1>
+            Lorem, ipsum dolor Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Sed minus perferendis ab ad modi cumque impedit
+            tenetur corrupti similique, dolore fugit dolor repellendus sunt id
+            amet non libero aliquid iusto.
+            <sapn class="text-warning">Lorem ipsum</sapn> dolor sit.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- <section class="py-5 justify-content-center" style="height: 1000pxm;"> -->
+    <div class="container">
+      <section class="row">
+        <!-- card one  -->
+        <div class="col-md">
+          <div class="card text-center" id="column-one">
+            <div class="card-title mb-3">
+              <h3 style="background-image: conic-gradient(black, white)">
+                <span class="px-1" style="color: black">Lorem,</span><span class="px-3" style="color: white"> ipsum
+                  dolor.</span>
+              </h3>
+            </div>
+            <div class="card-body text-center bg-secondary bg-gradient text-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
+              et excepturi, facilis, provident commodi vero perferendis
+              incidunt delectus nulla enim ea sed architecto cumque similique!
+              Ullam quia assumenda aliquid molestiae sed! Doloribus molestias
+              suscipit eligendi enim, delectus, dolor facere fugit sint
+              voluptas cum nihil explicabo mollitia earum incidunt consequatur
+              tenetur hic eius obcaecati, iure ab debitis.
+            </div>
+          </div>
+        </div>
+        <!-- card two -->
+        <div class="col-md">
+          <div class="card text-center" id="column-two">
+            <div class="card-title mb-3">
+              <h3 style="background-image: conic-gradient(black, white)">
+                <span class="px-1" style="color: black">Lorem,</span><span class="px-3" style="color: white"> ipsum
+                  dolor.</span>
+              </h3>
+            </div>
+            <div class="card-body text-center bg-secondary bg-gradient text-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
+              et excepturi, facilis, provident commodi vero perferendis
+              incidunt delectus nulla enim ea sed architecto cumque similique!
+              Ullam quia assumenda aliquid molestiae sed! Doloribus molestias
+              suscipit eligendi enim, delectus, dolor facere fugit sint
+              voluptas cum nihil explicabo mollitia earum incidunt consequatur
+              tenetur hic eius obcaecati, iure ab debitis.
+            </div>
+          </div>
+        </div>
+        <!-- card thrree -->
+        <div class="col-md">
+          <div class="card text-center" id="column-three">
+            <div class="card-title mb-3">
+              <h3 style="background-image: conic-gradient(black, white)">
+                <span class="px-1" style="color: black">Lorem,</span><span class="px-3" style="color: white"> ipsum
+                  dolor.</span>
+              </h3>
+            </div>
+            <div class="card-body text-center bg-secondary bg-gradient text-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
+              et excepturi, facilis, provident commodi vero perferendis
+              incidunt delectus nulla enim ea sed architecto cumque similique!
+              Ullam quia assumenda aliquid molestiae sed! Doloribus molestias
+              suscipit eligendi enim, delectus, dolor facere fugit sint
+              voluptas cum nihil explicabo mollitia earum incidunt consequatur
+              tenetur hic eius obcaecati, iure ab debitis.
+            </div>
+          </div>
+        </div>
+        <!-- end of cards  -->
+      </section>
+    </div>
+    <div class="d-flex flex-row bg-secondary mt-5">
+      <div class="p-2" style="height: 500px">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+        voluptate est commodi maxime ratione! Impedit velit similique numquam
+        consequatur excepturi, cumque animi laboriosam, hic, doloremque alias
+        pariatur magnam quisquam possimus totam quis delectus eveniet minima
+        iste rem quod ullam quia. Maxime dolorum totam consequuntur dolorem
+        asperiores, tempore debitis perspiciatis ad sed. Consequuntur
+        cupiditate, quo aspernatur repudiandae unde modi quia praesentium!
+      </div>
+      <div class="p-2">
+        <img src="uni-image1.jpg" style="width: 700px; height: 500px" alt="explosion" />
+      </div>
+    </div>
+    <!-- </section> -->
+  </section>
+  <section>
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample">
+      Button with data-bs-target
+    </button> -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header bg-secondary">
+        <button type="button" class="btn-close text-reset bg-secondary" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+        <h5 class="offcanvas-title bg-secondary justify-content-right" id="offcanvasExampleLabel">
+          Offcanvas
+        </h5>
+      </div>
+
+      <div class="offcanvas-body bg-dark text-light">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero
+          soluta laborum facere in debitis!
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            LOREM IPSUM
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+        voluptates in nisi, ipsum omnis officia, cum officiis fugit hic
+        repudiandae eligendi temporibus consequuntur molestiae dignissimos.
+        Omnis, reiciendis doloribus sapiente voluptatem eveniet laborum
+        tempora deleniti voluptatum enim quae asperiores, ut labore?
+        <div class="div row text-center">
+          <div class="col-md crd-1 my-1" id="crd1" style="background-image: linear-gradient(to right, red, blue)">
+            <div class="card text-light mt-2" style="background-image: conic-gradient(purple, yellow)">
+              <div class="div card-body text-center">
+                <div class="div h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">
+                  <span class="spanlorem1">lorem</span><span class="spanlorem">ipsum</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem, quas?
+                </p>
+                <a href="#" class="btn btn-warning">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="documentation">
+    <section class="demo1">
+      <div class="row">
+        <div class="col-md justify-content-right">
+        </div>
+
+        <div class="col-md"></div>
+      </div>
+    </section>
+    <section class="demo2"></section>
+    <section class="demo3"></section>
+  </section>
+  <div class="elem bigger right" id="elem">
+    <div class="handle">
+      handle
+    </div>
+  </div>
+  <div class="droppable" id="droppable"></div>
+  <div class="log" id="log"></div>
+
+  <script></script>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    // Fallback to loading jQuery from a local path if the CDN is unavailable
+    window.jQuery ||
+      document.write(
+        '<script src="/scripts/jquery-1.10.2.min.js"><\/script>'
+      );
+  </script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    --->
+</body>
+
+</html>

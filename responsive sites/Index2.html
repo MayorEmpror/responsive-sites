@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        @media(min-width: 768px) {
+            .news-input {
+                width: 50%;
+            }
+        }
+
+        #gradient {
+            background-image: linear-gradient(rgb(11, 133, 42), rgb(47, 196, 151));
+        }
+       
+            .jarallax {
+  position: relative;
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+        
+    </style>
+</head>
+
+<body id="body">
+    <nav class=" navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">lorem ipsum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#loremm">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="loremm">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">lorem ipsum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">lorem ipsum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDrop" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">lorem ipsum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-item-center justify-content-between">
+                <div>
+                    <h1>Lorem, ipss <span class="text-warning">consequatur facere maxime</span>consequatur facere maxime
+                    </h1>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae modi delectus ipsam
+                        repudiandae cupiditate doloremque autem similique hic, corporis quisquam nulla labore
+                        consequuntur sed porro alias mollitia officiis animi error.</p>
+                    <button class="btn btn-secondary btn-lg mb-3">lorem ipsum</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block " src="imge1.jpg" alt="foo">
+            </div>
+    </section>
+    
+    <section class="bg-secondary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">lorem ipsum contrdo</h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                        aria-label="Recipent's username" aria-describedby="button-addon2" />
+                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">
+                        Search
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="section p-5 " id="test">
+        <div class="container ">
+            <div class="div row text-center">
+                <div class="col-md crd-1 " id="crd1">
+                    <div class="card bg-dark text-light mt-2">
+                        <div class="div card-body text-center">
+                            <div class="div h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                lorem ipsum
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatem, quas?</p>
+                            <a href="#" class="btn btn-warning">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md crd-2">
+                    <div class="card bg-primary text-light mt-2">
+                        <div class="div card-body text-center">
+                            <div class="div h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                lorem ipsum
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatem, quas?</p>
+                            <a href="#" class="btn btn-warning">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md crd-3">
+                    <div class="card bg-secondary text-light mt-2">
+                        <div class="div card-body text-center">
+                            <div class="div h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                lorem idoel
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatem, quas?</p>
+                            <a href="#" class="btn btn-warning">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5">
+        <div class="container">
+            <div class="row align-item-center justify-content-between">
+                <div class="col-md">
+                    <img src="imge1.jpg" class="img-fluid" alt="lorem ipsum">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur,
+                        reiciendis cupiditate sed quia impedit.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus unde natus accusantium ab ut quae minima odit
+                        officia labore consectetur facere corrupti quaerat
+                        quisquam non, reiciendis sint, modi earum dolor!</p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i>Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-item-center justify-content-between">
+                <div class="col-md">
+                    <img src="imge1.jpg" class="img-fluid" alt="lorem ipsum">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur,
+                        reiciendis cupiditate sed quia impedit.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus unde natus accusantium ab ut quae minima odit
+                        officia labore consectetur facere corrupti quaerat
+                        quisquam non, reiciendis sint, modi earum dolor!</p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i>Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5" id="questions">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Lorem, ipsum dolor.
+            </h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- img tag -->
+
+<div class="jarallax">
+  <img class="jarallax-img" src="img1e.jpg" alt="">
+</div>
+<!-- picture tag -->
+<div class="jarallax">
+  <picture class="jarallax-img">
+    <source media="(max-width: 650px)" srcset="imge1-alt.jpg">
+   <img src="imge1.jpg" alt="">
+  </picture>
+</div>
+<!-- background image -->
+<div class="jarallax" style="background-image: url('imge1.jpg');">
+</div>
+    <section class="section-plugin"> thsi</section>
+
+    <div id="mask"></div>
+	<div class="stars" id="back"></div>
+	<div class="stars" id="middle"></div>
+	<div class="stars" id="front"></div>
+
+
+	
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="/path/to/dist/jarallax.js"></script>
+    <script src="/path/to/dist/jarallax-video.js"></script>
+    <script src="/path/to/dist/jarallax-element.js"></script>
+
+
+   
+    <style>
+    </style>
+    <script>
+        (function($) {  
+	$.fn.hueristics = function(options){
+		var settings = $.extend({
+			property: 'background-color',
+			startColor: '',
+			hue: 0,
+			saturation: 100,
+			lightness: 50,
+			alpha: 1,
+			moveVal: 'hue',
+			maxVal: 360,
+			minVal: 0,
+			speed: 70,
+			step: 1,
+			reverse:false
+		}, options ),
+		config = {
+			'dir' : (settings.reverse) ? 'd' : 'u',
+			'el' : $(this),
+			'speed' : ((101-settings.speed) * 15) / 10
+		},
+		getHSLA = function(color){
+			var rgb2hsl = function(r, g, b, a){
+				r /= 255, g /= 255, b /= 255, a = a | 1;
+				var max = Math.max(r, g, b), min = Math.min(r, g, b),
+				h, s, l = (max + min) / 2;
+				if (max == min) { h = s = 0; } 
+				else {
+					var d = max - min;
+					s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+					switch (max){
+						case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+						case g: h = (b - r) / d + 2; break;
+						case b: h = (r - g) / d + 4; break;
+					}
+					h /= 6;
+				}
+				return [(h*360+0.5)|0, ((s*100+0.5)|0), ((l*100+0.5)|0), a];
+			},
+			hex2hsla = function(hex){
+				var a,r,g,b;
+				if(hex.length==4 || hex.length==8){
+					a = (hex.length==4) ? parseInt(hex.substring(0,1).repeat(2), 16) : parseInt(hex.substring(0,2), 16);
+					a = parseFloat((a/255).toFixed(2));
+					r = (hex.length==4) ? parseInt(hex.substring(1,2).repeat(2), 16) : parseInt(hex.substring(2,4), 16);
+			    	g = (hex.length==4) ? parseInt(hex.substring(2,3).repeat(2), 16) : parseInt(hex.substring(4,6), 16);
+			    	b = (hex.length==4) ? parseInt(hex.substring(3,4).repeat(2), 16) : parseInt(hex.substring(6,8), 16);
+				}
+				else{
+					a = 1;
+					r = (hex.length==3) ? parseInt(hex.substring(0,1).repeat(2), 16) : parseInt(hex.substring(0,2), 16);
+			    	g = (hex.length==3) ? parseInt(hex.substring(1,2).repeat(2), 16) : parseInt(hex.substring(2,4), 16);
+			    	b = (hex.length==3) ? parseInt(hex.substring(2,3).repeat(2), 16) : parseInt(hex.substring(4,6), 16);
+				}
+			    return rgb2hsl(r,g,b,a);
+			},
+			rgbaHex = new RegExp(/(rgba?|hsla?)\s*\(\s*([1-2]?[0-9]{0,2}|[1-3]?[0-6]{0,2}|[1]?[0-9]{0,2}%?)\s*,\s*([1-2]?[0-9]+|[1]?[0-9]*\.?[0-9]*%?)\s*,\s*([1-2]?[0-9]+|[1]?[0-9]*\.?[0-9]*%?)\s*,?\s*([0-1]?\.?[0-9]*|[1]?[0-9]*\.?[0-9]*%?)\s*\)/,'i'),
+			hexReg = new RegExp(/#?([a-f0-9]{8}|[a-f0-9]{6}|[a-f0-9]{4}|[a-f0-9]{3})/,'i'),
+			isRGBAMatch = rgbaHex.test(color),
+			isHEXMatch = hexReg.test(color);
+			if(isRGBAMatch){
+				switch(color.match(rgbaHex)[1]){
+					case "rgb":
+					case "rgba":
+						return rgb2hsl(color.match(rgbaHex)[2], color.match(rgbaHex)[3], color.match(rgbaHex)[4], color.match(rgbaHex)[5]);
+					case "hsl":
+					case "hsla":
+						return [color.match(rgbaHex)[2], color.match(rgbaHex)[3], color.match(rgbaHex)[4], (typeof color.match(rgbaHex)[5] === 'undefined' | color.match(rgbaHex)[5]==null | !color.match(rgbaHex)[5].length) ? 1 : color.match(rgbaHex)[5]];
+				}
+			}
+			if (isHEXMatch) {
+				if(hexReg.test(color)){
+					return hex2hsla(color.match(hexReg)[1]);
+				}
+			}
+			return [0,0,0,0];	
+		},
+		startVals = getHSLA(config.el.css(settings.property)),
+		firstVals = (settings.startColor.length) ? getHSLA(settings.startColor) : [parseInt(settings.hue),parseInt(settings.saturation),parseInt(settings.lightness),parseInt(settings.alpha)],
+		init = function(){
+			moveTo(startVals,firstVals,doHue);
+		},
+		times = 0,
+		moveTo = function(startColor,endColor,callback){
+			var pos = 'up', neg = 'd',
+				hueDirection = (startColor[0] < endColor[0]) ? pos : neg,
+				satDirection = (startColor[1] < endColor[1]) ? pos : neg,
+				lightDirection = (startColor[2] < endColor[2]) ? pos : neg,
+				alphaDirection = (startColor[3] < endColor[3]) ? pos : neg,
+				hueStep = Math.abs(startColor[0] - endColor[0]),
+				satStep = Math.abs(startColor[1] - endColor[1]),
+				lightStep = Math.abs(startColor[2] - endColor[2]),
+				alphaStep = Math.abs(startColor[3] - endColor[3]),
+				eachStep = Math.max(hueStep,satStep,lightStep,alphaStep)/settings.step;
+
+			if(startColor[0]!=endColor[0] || startColor[1]!=endColor[1] || startColor[2]!=endColor[2] || startColor[3]!=endColor[3]){
+				setTimeout(function(){
+					var h = (h != endColor[0]) ? (hueDirection == 'd') ? ((startColor[0] - (hueStep/eachStep)) < endColor[0]) ? endColor[0] : startColor[0] - (hueStep/eachStep) : ((startColor[0] + 1) > endColor[0]) ? endColor[0] : startColor[0] + (hueStep/eachStep) : endColor[0],
+					s = (s != endColor[1]) ? (satDirection == 'd') ? ((startColor[1] - (satStep/eachStep)) < endColor[1]) ? endColor[1] : startColor[1] - (satStep/eachStep) : ((startColor[1] + 1) > endColor[1]) ? endColor[1] : startColor[1] + (satStep/eachStep) : endColor[1],
+					l = (l != endColor[2]) ? (lightDirection == 'd') ? ((startColor[2] - (lightStep/eachStep)) < endColor[2]) ? endColor[2] : startColor[2] - (lightStep/eachStep) : ((startColor[2] + 1) > endColor[2]) ? endColor[2] : startColor[2] + (lightStep/eachStep) : endColor[2],
+					a = (a != endColor[3]) ? (alphaDirection == 'd') ? ((startColor[3] - (alphaStep/eachStep)) < endColor[3]) ? endColor[3] : startColor[3] - (alphaStep/eachStep) : ((startColor[3] + 1) > endColor[3]) ? endColor[3] : startColor[3] + (alphaStep/eachStep) : endColor[3];
+					config.el.css(settings.property,'hsla('+h+','+s+'%,'+l+'%,'+a+')');
+					moveTo([h,s,l,a],endColor);
+				},config.speed)
+			}
+			else{
+				doHue();
+			}
+		},
+		doHue = function(){
+			setInterval(function(){
+	            settings[settings['moveVal']] = (config.dir=='u') ? settings[settings['moveVal']]-=settings.step : settings[settings['moveVal']]+=settings.step;
+	            config.el.css(settings.property,'hsla('+settings.hue+','+settings.saturation+'%,'+settings.lightness+'%,'+settings.alpha+')');
+	        },config.speed)
+		};
+		
+		init();
+	}
+})(jQuery);
+
+
+$("#test").hueristics();
+
+var s=0,b=0,m=0,f=0,timer;
+		function stars(b,m,f,distance){
+		    // set relative distance to move layers
+			b+=distance[0];
+			m+=distance[1];
+			f+=distance[2];
+			// move position right and left
+			$('div.stars#back').css('background-position',b+'px 0px');
+			$('div.stars#middle').css('background-position',m+'px 0px');
+			$('div.stars#front').css('background-position',f+'px 0px');
+			// do it again
+			timer = setTimeout(function(){
+                stars(b,m,f,distance)
+            },20);
+		}
+		stars(0,0,0,[.5,-.5,-1]);
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+         crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+     <script src="ajax.googleapis.com/ajax/libs/jquery/2.1.3/…> <script src="maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/…>  </script>
+</body>
+
+</html>

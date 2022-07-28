@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          crossorigin="anonymous"></script>
+         
+          <script>
+            function bigimg(x){
+               x.style.width ="450px";
+               x.style.height = "350px";
+               x.style.backgroundColor=  "orange";
+            }
+            function smallimg(x){
+                
+               x.style.width ="416px";
+               x.style.height = "308px";
+               x.style.backgroundColor=  "blue";
+            }
+
+          </script>
+       </head>
+
+<body>
+     <section class="row">
+        <div 
+        class="container" 
+        id="column-1 m-2 mt-5"
+         style="width : 416px; height : 308px; background-color : blue" 
+         onmouseover="bigimg(this)" 
+         onmouseout="smallimg(this)" ></div>
+        <div 
+        class="container" 
+        id="column-1 m-2 mt-5" 
+        style="width : 416px; height : 308px; background-color : blue"
+        onmouseover="bigimg(this)" 
+         onmouseout="smallimg(this)"></div>
+        <div
+         class="container" 
+         id="column-1 m-2 mt-5" 
+         style="width : 416px; height : 308px; background-color : blue"
+         onmouseover="bigimg(this)" 
+         onmouseout="smallimg(this)"></div>
+     </section>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    // Fallback to loading jQuery from a local path if the CDN is unavailable
+    (window.jQuery || document.write('<script src="/scripts/jquery-1.10.2.min.js"><\/script>'));
+</script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  --->
+</body>
+</html>
